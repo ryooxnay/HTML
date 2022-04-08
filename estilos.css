@@ -1,0 +1,75 @@
+body{
+    background:black;
+    
+}
+h1{
+
+    
+}
+.f{
+    font-weight: bold;
+    background-image: linear-gradient(
+        to right,
+        blue,
+        blue,
+        dodgerblue,
+        white,
+        dodgerblue,
+        blue,
+        blue);
+    background-size: 110vw;
+    animation: sliding 150s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.i{
+    font-weight: bold;
+    background-image: linear-gradient(
+        to right,
+        orangered,
+        orange,
+        gold,
+        lightgreen,
+        cyan,
+        dodgerblue,
+        mediumpurple,
+        hotpink,
+        orangered);
+    background-size: 110vw;
+    animation: sliding 150s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.g{
+    font-weight: bold;
+    background-image: linear-gradient(
+        to right,
+        gray,
+        white,
+        gray);
+    background-size: 110vw;
+    animation: sliding 150s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.l{
+    font-weight: bold;
+    background-image: linear-gradient(
+        to right,
+        blue,
+        blue,
+        dodgerblue,
+        white,
+        dodgerblue,
+        blue,
+        blue);
+    background-size: 110vw;
+    animation: sliding 150s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes sliding {
+    to {
+        background-position: -2000vw;
+    }
+}
