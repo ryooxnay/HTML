@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* #container_1 {
+    display:flexbox;
+}
+
+#container_2 {
+    display: none;
+}
+#container_3 {
+    display: none;
+} */
+
+
+.titulo_carrusel{
+    font-size: 40px;
+    font-family:'Pacifico', cursive;
+    margin-top: 500px;
+    margin-bottom: 50px;
+    color: rgb(8, 8, 58);
+}  
+.subTitulo_carrusel{
+    margin: 0;
+    color: #000;
+    display: inline;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.Titusabor_carrusel{
+    margin: 7px 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+    font-family:'Shantell Sans', cursive;
+    margin-top: 0;
+}
+.linea_div_carrusel{
+    width: 80%;
+    height: 2px;
+    background-color: #36221c;
+    text-align: center;
+}
+.carousel{
+    min-height: 400px;
+}
+ 
+.carousel .carousel-item{
+    display: flex;
+    flex-direction: column; /*Elementos uno debajo de otro*/
+    justify-content:center ;
+    align-items: center;
+    user-select: none;   /*Para no sleccionar los textos*/
+    
+    width: 600px;
+    height: 400px;
+}
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /*Para acmodar la imagen en tamaño*/
+    position: absolute; /*Para poner de fondo la imagen*/
+    top: 0;
+    left: 0; /*Para acomodar la imagen en las cordenadas 0,0 en la parte superiior d ela izquierda*/
+    z-index: -1; /*Para poner asta tras de las letras la imagen*/
+    border-radius: 20px;
+}
+
+/* .carousel .indicators .indicators-item{
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 0 15px;
+    background: #36221c;
+} */
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+.wrapper{
+    display: block;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    padding: 70px 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.menu, .content{
+    width: 100%;
+}
+select{
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    border: 4px solid #3f51b5;
+    box-shadow: 0 15px 15px #efefef;
+    appearance: none;
+    background: #e8eaf6;
+    background-position: 95% 55%;
+    background-size: 22px;
+}
+.content{
+    margin: 30px 0;
+}
+.content .data{
+    padding: 25px;
+    background-color: #fff;
+    border: 2px solid #8bc34a;
+    border-radius: 8px;
+}
+.content p{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gainsboro;
+}
+.content p:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.content p b{
+    font-weight: 700;
+}
+.content p span{
+    float: right;
+    font-weight: normal;
+}
+.content .imagen img{
+    text-align: center;
+    width: 150px;
+}
+.data{
+    display: none;
+}
