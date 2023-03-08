@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #222;
+    font-family: monospace;
+}
+.titulo{
+    color: antiquewhite;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.galeria{
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /*Para tener un espacio entre las imagenes*/
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
