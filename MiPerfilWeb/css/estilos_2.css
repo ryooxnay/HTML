@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body{
+    font-family: 'Amaranth', sans-serif;
+}
+/* ------------------------------------------------------ */
+/* --------------------------M E N U---------------------------- */
+
+.menu_logo{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+.menu_logo:hover{
+    filter: sepia();
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* 
+Encabezdo de la paguina--->>>
+*/
+header{
+    width: 100%;
+    height: 450px;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,hsla(303, 100%, 11%, 0.61), hsla(185, 86%, 31%, 0.596)),url(../imagenes/lab.png);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(303, 100%, 11%, 0.61), hwb(185 4% 42% / 0.61)),url(../imagenes/lab.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+/* ------------------------------------------------------ */
+/*menu*/
+/* ------------------------------------------------------ */
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none; /* Es para quitar el color azul de un link*/
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+.wave{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+
+header .textos-header{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Kavoon', cursive;
+    
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+/* ------------------------------------------------------ */
+/* Leyenda */
+/* ------------------------------------------------------ */
+.leyenda{
+    font-size: 23px;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+}
+.box{
+    display:flex;
+    position:relative;
+    width: 550px;
+    top: 50%;
+    bottom: -200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:  1px solid #051682;
+    padding: 20px;
+    background: -webkit-linear-gradient(to right,hsla(303, 100%, 11%, 0.61), hsla(185, 86%, 31%, 0.596));
+    background: linear-gradient(to right, hsla(303, 100%, 11%, 0.61), hwb(185 4% 42% / 0.61));
+    /* background: hsla(232, 60%, 17%, 0.651); */
+    box-shadow: 0px 0px 10px #051682;
+
+}
+.content-leyenda{
+    justify-content: space-evenly; /*Para repartir el espacio*/
+    display: relative;
+    text-align: center;
+    
+}
+.content-leyenda img{
+    width: 200px;
+    margin-left: 100px;
+    margin-right: 15%;
+    border-radius: 20px;
+
+}
+.content-leyenda p{
+    text-align: center;
+    margin-left: 27px;
+} 
+
+/* .img_leyenda{
+    width:25%;
+    text-align: center;
+    border-radius: 20px;
+    border-color: red;
+    border-style: solid 5px;
+    
+} */
+/*
+.img_leyenda img{
+    px;
+
+    
+    width: 200px;
+    margin: 10px auto 0;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+}
+.cambio_img_2:hover{
+    opacity: 0;
+    cursor: pointer;
+}  */
+
+/* .content-leyenda img{
+    position:absolute;
+    width: 200px;
+    margin: 10px auto 0;
+    transition: opacity 1s ease-in-out;
+} */
+/* #cambio_img{
+    width: 200px;
+    transition: opacity 1s ease-in-out;
+}
+#cambio_img_2{
+    transition: opacity 1s ease-in-out;
+} */
+
+
+
+/* .img_leyenda::before{
+    width: 25%;
+    text-align: left;
+    border-radius: 20px;
+    border-color: hsla(303, 100%, 11%, 0.61);
+    animation: ani_foto 5s infinite;
+} */
+
+
+.sp_box{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.sp_box::before{
+    content: '';
+    position:absolute;
+    left: 0 ;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    background: #50dfdb;
+    animation: animate 4s linear infinite;
+}
+
+.sp_box:nth-child(1){
+    transform: rotate(0deg);
+}
+
+.sp_box:nth-child(3){
+    transform: rotate(180deg);
+}
+
+.box:hover span::before{
+    animation-play-state: paused;
+}
+.box:hover{
+    box-shadow: 0px 0px 10px #0fd8d8;
+}
+
+/* ------------------------------------------------------ */
+/*Contenedor*/
+/* ------------------------------------------------------ */
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly; /* Que reparta el espacio*/
+    padding: auto;
+}
+.imagen-acerca-de{
+    
+    width: 49%;
+    border-radius: 20px;
+}
+#img_acercaDe_hover_1:hover{
+    transform: scale(1.1);
+}
+#img_acercaDe_hover:hover{
+    transform: scale(1.3);
+}
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+.p_fecha{
+    padding: 0px 0px 10px 15px;
+    text-align: justify;
+    font-weight: bolder;
+}
+.contenido-textos .p_formacionAca{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* ------------------------------------------------------ */
+/*Galeria*/
+/* ------------------------------------------------------ */
+
+.portafolio{
+    background: #fff;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 25%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* ------------------------------------------------------ */
+/*Animacion de las imagenes*/
+/* ------------------------------------------------------ */
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: hsla(273, 91%, 27%, 0.7);
+    transform: scale(0);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img{
+    width: 50px;
+}
+.hover-galeria p{
+    color: #fff;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* ------------------------------------------------------ */
+/*Clientes*/
+/* ------------------------------------------------------ */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+.cards .card > .contenido-texto-card p{
+    font-weight: 300px;
+    padding-top: 5px;
+}
+
+/* ------------------------------------------------------ */
+/* Acerca de nosotros */
+/* ------------------------------------------------------ */
+
+.about-service{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+.servicio-cont{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+.servicio-ind img{
+    width: 90%;
+}
+.servicio-ind h3{
+    margin: 10px 0;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* ------------------------------------------------------ */
+/* footer */
+/* ------------------------------------------------------ */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly; /* para repartir el espacio de manera igual*/
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.contenedor-foo{
+    text-align: center;
+}
+.contenedor-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.contenedor-foo p{
+    color: #ccc;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+.contenedor-foo a{
+    color: #ccc;
+    text-decoration: none;
+}
+/* ------------------------------------------------------ */
+/* --------------------A N I M A C I O N E S---------------------------------- */
+/* ------------------------------------------------------ */
+
+@keyframes ani_foto{
+    0%{
+        
+        background: url(../imagenes/YonyDavid.jpg);
+        width: 25%;
+        text-align: center;
+        border-radius: 20px;
+    }
+    50%{
+        background-image: url(../imagenes/YonyDavid_3.jpg);
+        width: 25%;
+        text-align: auto;
+        border-radius: 20px;
+    }
+    100%{
+        background-image: url(../imagenes/YonyDavid.jpg);
+        width: 25%;
+        text-align: auto
+        ;
+        border-radius: 20px;
+    }
+}
+
+
+@keyframes animate{
+    0%{
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50%{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    50.1%{
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+    100%{
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
